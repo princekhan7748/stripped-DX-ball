@@ -74,7 +74,7 @@ def Display_updater():
     pygame.display.update()
 
 
-def init():
+def brick_initialization():
     global bricks
     bricks = []
     for i in range(6):
@@ -95,7 +95,7 @@ bricks = []
 player = Paddle(350, 500, 100, 20, (255, 255, 0))
 ball = Ball(player.x, player.y - 30, 20, 20, (255, 255, 255), False)
 attempts = 1
-init()
+brick_initialization()
 
 #   Game loop
 
