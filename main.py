@@ -136,6 +136,7 @@ while running:
                 if attempts == 0:
                     attempts = 2
                     brick_initialization()
+                    score = 0
     if attempts > 0:
         if ball.status:
             ball.move()
